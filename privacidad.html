@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Política de Privacidad de Clipper.">
+<title>Clipper · Política de Privacidad</title>
+<link rel="icon" href="icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+
+  /* Una sola columna de lectura, estilo de la app Clipper: negro profundo con carmesí (diseño oscuro a propósito) */
+  :root {
+    --fondo: #050505;
+    --tarjeta: #0f0d0d;
+    --linea: #241a1b;
+    --rojo: #c1121f;
+    --rojo-suave: #e2525b;
+    --texto: #e8e6e6;
+    --apagado: #8b8283;
+    --titulo: 'Rajdhani', 'Segoe UI', sans-serif;
+    --cuerpo: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--fondo);
+    color: var(--texto);
+    font-family: var(--cuerpo);
+    font-size: 16px;
+    line-height: 1.65;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 48px 72px;
+  }
+  .hoja { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+  header { display: flex; flex-direction: column; gap: 10px; padding-bottom: 28px; border-bottom: 1px solid var(--linea); }
+  .marca { font-family: var(--titulo); font-weight: 700; font-size: 34px; letter-spacing: 4px; line-height: 1; }
+  .marca span { color: var(--rojo); }
+  .resumen { color: var(--apagado); max-width: 60ch; }
+  nav { display: flex; gap: 10px; flex-wrap: wrap; }
+  nav a {
+    color: var(--texto); text-decoration: none; font-family: var(--titulo); font-weight: 600; letter-spacing: 1.5px;
+    font-size: 15px; padding: 7px 14px; border: 1px solid var(--linea); border-radius: 8px; transition: border-color .2s, box-shadow .2s;
+  }
+  nav a:hover, nav a:focus-visible { border-color: var(--rojo); box-shadow: 0 0 16px rgba(193, 18, 31, .35); outline: none; }
+  section { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 24px; }
+  h1 { font-family: var(--titulo); font-weight: 700; font-size: 30px; letter-spacing: 2px; line-height: 1.1; text-wrap: balance; margin: 0; }
+  h2 { font-family: var(--titulo); font-weight: 600; font-size: 19px; letter-spacing: 1px; color: var(--rojo-suave); margin: 12px 0 0; }
+  p, li { max-width: 65ch; margin: 0; }
+  ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
+  .fecha { font-size: 13px; color: var(--apagado); letter-spacing: .3px; }
+  .nota { background: var(--tarjeta); border: 1px solid var(--linea); border-left: 3px solid var(--rojo); border-radius: 8px; padding: 14px 16px; }
+  a { color: var(--rojo-suave); }
+  footer { border-top: 1px solid var(--linea); padding-top: 20px; font-size: 13px; color: var(--apagado); }
+  @media (max-width: 480px) { body { font-size: 15px; padding-block: 32px 56px; } h1 { font-size: 26px; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+  .marca a { color: inherit; text-decoration: none; }
+  .tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .tarjeta { background: var(--tarjeta); border: 1px solid var(--linea); border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 6px; }
+  .tarjeta b { font-family: var(--titulo); font-size: 18px; letter-spacing: 1px; }
+  .tarjeta span { color: var(--apagado); font-size: 14px; }
+  .icono { width: 96px; height: 96px; border-radius: 22px; }
+
+</style>
+</head>
+<body>
+<div class="hoja">
+  <header>
+    <div class="marca"><a href="index.html">CLIP<span>PER</span></a></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="terminos.html">Términos de Servicio</a>
+      <a href="privacidad.html">Política de Privacidad</a>
+    </nav>
+  </header>
+  <section id="privacidad">
+    <h1>Política de Privacidad</h1>
+    <p class="fecha">Última actualización: 16 de noviembre de 2026</p>
+
+    <div class="nota">En resumen: Clipper no recoge datos de nadie. Todo se queda en la computadora del creador, y solo se envía a TikTok o YouTube el video que él decide publicar.</div>
+
+    <h2>1. Qué datos usa</h2>
+    <ul>
+      <li><b>Datos de la cuenta del creador</b> en TikTok y YouTube: el nombre visible de la cuenta y los permisos (tokens) que esas plataformas entregan al conectar, para poder subir videos.</li>
+      <li><b>Los clips y su información</b> (títulos, hashtags, transcripción), creados a partir de los directos del creador.</li>
+    </ul>
+    <p>Clipper no pide ni guarda contraseñas. El inicio de sesión se hace en las páginas oficiales de TikTok y Google.</p>
+
+    <h2>2. Dónde se guardan</h2>
+    <p>Todo se guarda solo en la computadora del creador. Los permisos de TikTok y YouTube se guardan cifrados con la protección de datos de Windows. Clipper no tiene servidores ni bases de datos en internet.</p>
+
+    <h2>3. Con quién se comparten</h2>
+    <p>Con nadie más. Solo se envía a TikTok o YouTube el video, el título y los hashtags que el creador decide publicar, a través de sus APIs oficiales. Clipper no vende datos, no muestra publicidad y no usa herramientas de seguimiento.</p>
+
+    <h2>4. Datos de otras personas</h2>
+    <p>Clipper no recoge datos de espectadores ni de otros usuarios de TikTok o YouTube.</p>
+
+    <h2>5. Cómo borrar los datos</h2>
+    <p>Desde la sección Cuentas de Clipper, el botón Desconectar borra los permisos guardados y los revoca en la plataforma. También se puede quitar el acceso desde la configuración de seguridad de TikTok o de la cuenta de Google. Los clips se borran desde la propia app.</p>
+
+    <h2>6. Contacto</h2>
+    <p>Para cualquier consulta sobre esta política, escribe al creador a través de su canal de YouTube <a href="https://www.youtube.com/@Clipper07_RD" rel="noopener">Clipper07_RD</a>.</p>
+  </section>
+  <footer>Clipper · herramienta personal de clips · 2026</footer>
+</div>
+</body>
+</html>
